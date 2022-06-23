@@ -1,0 +1,11 @@
+// //Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {  }
+@mixin response ($braking) {
+    // //Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px)
+@if $braking == s {
+    @media only screen and (max-width: 600px) {
+        @content;
+      }
+}
+}
